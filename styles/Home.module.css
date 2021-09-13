@@ -9,14 +9,15 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
+.links{
+  
+}
 .footer {
   width: 100%;
   height: 100px;
@@ -112,6 +113,27 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+.cloudContainer{
+  width: 30%;
+}
+.titleAndImg{
+  width: 30%;
+}
+.titleAndImg h2{
+  font-size:larger;
+}
+.titleAndImg button{
+  height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+.titleAndImg button:hover{
+  background-color: #f1f1f1;
+   
+}
 
 @media (max-width: 600px) {
   .grid {
@@ -119,3 +141,4 @@
     flex-direction: column;
   }
 }
+
