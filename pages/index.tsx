@@ -71,8 +71,8 @@ const Home: NextPage = () => {
               <a className={styles.links}>About</a>
             </li>
             <li>
-              <a className={styles.links} href="#projects">
-                Projects
+              <a className={styles.links} href="#portfolio">
+                Portfolio
               </a>
             </li>
             <li>
