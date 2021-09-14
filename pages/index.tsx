@@ -15,19 +15,22 @@ const projects=[
     id:1,
     name:'Podcast channel',
     img:'/podcast-channel.png',
-    link:"https://podcast-and-more.netlify.app/"
+    link:"https://podcast-and-more.netlify.app/",
+    description:"Proyecto enfocado en el maquetado de la landing page de un canal de Podcast."
   },
   {
     id:2,
     name:'Gifos',
     img:'/Gifos.png',
-    link:"https://ilovegifos.netlify.app/"
+    link:"https://ilovegifos.netlify.app/",
+    description:"Éste proyecto consiste en la creación de una aplicación web interactiva para buscar, guardar y compartir GIFS"
   },
   {
     id:3,
     name:'Artfol',
     img:'/artfol.png',
-    link:"https://artfol.netlify.app/"
+    link:"https://artfol.netlify.app/",
+    description:"Proyecto enfocado en el maquetado de la landing page de un canal de Podcast, siguiendo las guías visuales de una interfaz de usuario otorgada"
   }
 ]
 
@@ -38,13 +41,19 @@ const Home: NextPage = () => {
 
   const projectData= projects.map((project)=>{
     return(
-      <div key={project.id}>
+      <div key={project.id} className={styles.projectCn}>
+        <p className={styles.projectTitle}>{project.name}</p>
         <a href={project.link} target='_blank' rel="noreferrer">
        
         <Image src={project.img} alt={project.name} width={220} height={140} quality={100} className={styles.projectsImg} ></Image>
         
         </a>
-<p>{project.name}</p>
+        <div className={styles.projectDescAndBtn}>
+        
+<p>{project.description}</p>
+<a href={project.link} target='_blank' rel="noreferrer">Demo</a>
+        </div>
+
       </div>
     )
   })
@@ -74,7 +83,7 @@ const Home: NextPage = () => {
       </header>
       <main className={styles.main}>
         <div className={styles.titleAndImg}>
-          <h1>Hi, I'm Matias Juarez</h1>
+          <h1>Hi, Im Matias Juarez</h1>
           <h2> Frontend developer</h2>
           <p>
             Specialized in web applications,landing pages and modern websites
@@ -176,7 +185,7 @@ const Home: NextPage = () => {
       <section id="portfolio">
 <h2>Portfolio</h2>
 <p>My recent works</p>
-<div>
+<div className={styles.projectDataCn}>
   {projectData}
 </div>
 
