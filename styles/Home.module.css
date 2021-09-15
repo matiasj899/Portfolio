@@ -220,6 +220,7 @@
   display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px
 }
 .waysToContact p{
  margin: 0;
@@ -233,6 +234,7 @@
   display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .projectCn{
   
@@ -308,7 +310,7 @@
   width: 100%;
 }
 .sendMessage{
-  width: 100px;
+ 
   text-align: center;
   background-color: ghostwhite;
 
@@ -324,6 +326,28 @@
   
   align-items: center;
   cursor: pointer;
+}
+.subtitle{
+  margin-top: 0;
+    color: slategray;
+    font-size: small;
+}
+.aditionalInfo{
+  margin-left: 10px;
+}
+.principalInfo{
+  font-size: larger;
+    font-weight: bold;
+}
+.secondaryInfo{
+  font-size: small;
+    color: slategrey;
+}
+.cloudFlex{
+  display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 30px;
 }
 @media (max-width: 600px) {
   .grid {

@@ -8,6 +8,7 @@ import CloudInvert from "../public/cloud-Copy.png";
 import phone from "../public/mobile-alt-solid.svg";
 import email from "../public/envelope-regular.svg";
 import location from "../public/map-marker-alt-solid.svg";
+import linkedin from "../public/linkedin-brands.svg"
 import { useState } from "react";
 
 const projects = [
@@ -34,6 +35,14 @@ const projects = [
     link: "https://artfol.netlify.app/",
     description:
       "Landing page development following the visual guides of a given user interface.",
+  },
+  {
+    id: 4,
+    name: "Calculator",
+    img: "/calculator.png",
+    link: "https://calculadora-react-redux.netlify.app/",
+    description:
+      "Calculator, allow to do basic math operations.",
   },
 ];
 
@@ -85,7 +94,7 @@ const Home: NextPage = () => {
               </a>
             </li>
             <li>
-              <a className={styles.links}>Contact</a>
+              <a className={styles.links} href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -193,34 +202,49 @@ const Home: NextPage = () => {
       </section>
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>My recent work</p>
+        <p className={styles.subtitle}>My recent work</p>
         <div className={styles.projectDataCn}>{projectData}</div>
       </section>
+      <div className={styles.cloudFlex}> 
+      <div className={styles.cloudContainer}>
+        <Image src={CloudInvert} alt="cloud" />
+      </div>
+      </div>
+      
       <section id="contact">
         <h2>Contact me</h2>
-        <p>Get in touch</p>
+        <p className={styles.subtitle}>Get in touch</p>
         <div className={styles.contactCn}>
           <div className={styles.waysToContactCn}>
             <div className={styles.waysToContact}>
-              <Image src={phone} alt="phone" width={30} height={30}></Image>
-              <div>
-                <p>Call me</p>
-                <p>011-26513070</p>
+              <Image src={phone} alt="phone" width={25} height={25}></Image>
+              <div className={styles.aditionalInfo}>
+                <p className={styles.principalInfo}>Call me</p>
+                <p className={styles.secondaryInfo}>011-26513070</p>
               </div>
             </div>
             <div className={styles.waysToContact}>
-              <Image src={email} alt="email" width={30} height={30}></Image>
-              <div>
-                <p>Email</p>
-                <p>matiasjuarez899@gmail.com</p>
+              <Image src={email} alt="email" width={25} height={25}></Image>
+              <div className={styles.aditionalInfo}>
+                <p className={styles.principalInfo}>Email</p>
+                <p className={styles.secondaryInfo}>matiasjuarez899@gmail.com</p>
               </div>
             </div>
             <div className={styles.waysToContact}>
-              <Image src={location} alt="email" width={30} height={30}></Image>
-              <div>
-                <p>Location</p>
-                <p>Buenos Aires, Argentina.</p>
+              <Image src={location} alt="email" width={25} height={25}></Image>
+              <div className={styles.aditionalInfo}>
+                <p className={styles.principalInfo}>Location</p>
+                <p className={styles.secondaryInfo}>Buenos Aires, Argentina.</p>
               </div>
+            </div>
+            <div className={styles.waysToContact}>
+            <a href='https://www.linkedin.com/in/matias-juarez-dev/'target="_blank" rel="noreferrer" >
+            <Image src={linkedin} alt="email" width={25} height={25}>
+                
+                </Image>
+            </a>
+              
+             
             </div>
           </div>
           <form>
