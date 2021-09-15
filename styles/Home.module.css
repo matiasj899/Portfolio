@@ -262,7 +262,9 @@
 .projectCn:hover{
   
   transform: scale(1.05);
+  box-shadow: 1px 0px 10px 0px #4c5763;
 }
+
 .projectDescAndBtn{
   display: flex;
   
