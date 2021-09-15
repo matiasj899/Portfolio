@@ -28,6 +28,7 @@
   -moz-box-pack: center;
   justify-content: center;
 }
+
 .buttonIcon{
   background-image: url(../public/angle-double-right.svg);
   background-repeat: no-repeat;
@@ -375,6 +376,14 @@
 }
 .projectDescAndBtn .codeBtn:hover{
   background-color: #4c5763;
+}
+
+  .homeButton:hover{
+    background-color: #dcdcde;
+  }
+
+.sendMessage:hover{
+  background-color: #dcdcde;
 }
 @media (max-width: 600px) {
   .grid {

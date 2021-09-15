@@ -33,7 +33,7 @@ nav ul{
 main{
   margin-bottom: 40px;
 }
-h1,h2,p,a,button,li,form,input,label{
+h1,h2,p,a,button,li,form,input,label,textarea{
   font-family: 'Poppins', sans-serif;
 }
 section{
