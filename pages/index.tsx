@@ -19,7 +19,7 @@ const projects = [
     link: "https://podcast-and-more.netlify.app/",
     git:"https://github.com/matiasj899/Podcast-Channel-",
     description:
-      "Project focused on the layout of the landing page of a Podcast channel.",
+      "Project focused on the layout of the landing page of a Podcast channel. Developed with Html and Css.",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects = [
     link: "https://ilovegifos.netlify.app/",
     git:"https://github.com/matiasj899/IloveGIFOS",
     description:
-      "This project consists in the creation of an interactive web application to search, save and share gifs.",
+      "This project consists in the creation of an interactive web application to search, save and share gifs. Developed with Html,Css and Javascript.",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const projects = [
     link: "https://artfol.netlify.app/",
     git:"https://github.com/matiasj899/IloveGIFOS",
     description:
-      "Landing page development following the visual guides of a given user interface.",
+      "Landing page development following the visual guides of a given user interface. Developed with Html,Css and Javascript.",
   },
   {
     id: 4,
@@ -46,8 +46,35 @@ const projects = [
     link: "https://calculadora-react-redux.netlify.app/",
     git:"https://github.com/matiasj899/Calculadora-redux",
     description:
-      "Calculator, allow to do basic math operations.",
+      "Calculator, allow to do basic math operations. Developed with React and Redux.",
   },
+  {
+    id: 5,
+    name: "Rooftop challenge",
+    img: "/rooftop-challenge.png",
+    link: "https://rooftop-frontend-challenge.netlify.app/",
+    git:"https://github.com/matiasj899/Rooftop-challenge-frontend",
+    description:
+      "Final project for Rooftop company academy. Developed with React and Typescript.",
+  },{
+    id: 6,
+    name: "Advanced calculator",
+    img: "/advanced-calculator.png",
+    link: "https://advanced-calculator.netlify.app/",
+    git:"https://github.com/matiasj899/calculadora-avanzada",
+    description:
+      "Advanced calculator made por Rooftop academy. Developed with React Hooks.",
+  },
+  {
+    id: 7,
+    name: "Data warehouse",
+    img: "/advanced-calculator.png",
+    link: "https://advanced-calculator.netlify.app/",
+    git:"https://github.com/matiasj899/calculadora-avanzada",
+    description:
+      "Advanced calculator made por Rooftop academy. Developed with React Hooks.",
+  },
+  
 ];
 
 const Home: NextPage = () => {
