@@ -65,15 +65,7 @@ const projects = [
     description:
       "Advanced calculator made por Rooftop academy. Developed with React Hooks.",
   },
-  {
-    id: 7,
-    name: "Data warehouse",
-    img: "/advanced-calculator.png",
-    link: "https://advanced-calculator.netlify.app/",
-    git:"https://github.com/matiasj899/calculadora-avanzada",
-    description:
-      "Advanced calculator made por Rooftop academy. Developed with React Hooks.",
-  },
+ 
   
 ];
 
