@@ -15,7 +15,18 @@
   justify-content: space-evenly;
 }
 .homeButton{
+  height: 40px;
+  width: 140px;
+  border-radius: 10px;
+  display: -moz-box;
   display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: ghostwhite;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
 }
 .buttonIcon{
   background-image: url(../public/angle-double-right.svg);
@@ -268,7 +279,7 @@
     text-align: center;
 }
 .projectDescAndBtn a{
-  width: 100px;
+  width: 90px;
     text-align: center;
     background-color: dodgerblue;
     color: ghostwhite;
@@ -350,7 +361,18 @@
     margin-right: 30px;
 }
 .contactSection{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.codeAndDemoBtn{
+  display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.projectDescAndBtn .codeBtn{
+  background-color: slategrey;
+}
+.projectDescAndBtn .codeBtn:hover{
+  background-color: #4c5763;
 }
 @media (max-width: 600px) {
   .grid {

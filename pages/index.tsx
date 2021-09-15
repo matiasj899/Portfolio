@@ -17,6 +17,7 @@ const projects = [
     name: "Podcast channel",
     img: "/podcast-channel.png",
     link: "https://podcast-and-more.netlify.app/",
+    git:"https://github.com/matiasj899/Podcast-Channel-",
     description:
       "Project focused on the layout of the landing page of a Podcast channel.",
   },
@@ -25,6 +26,7 @@ const projects = [
     name: "Gifos",
     img: "/Gifos.png",
     link: "https://ilovegifos.netlify.app/",
+    git:"https://github.com/matiasj899/IloveGIFOS",
     description:
       "This project consists in the creation of an interactive web application to search, save and share gifs.",
   },
@@ -33,6 +35,7 @@ const projects = [
     name: "Artfol",
     img: "/artfol.png",
     link: "https://artfol.netlify.app/",
+    git:"https://github.com/matiasj899/IloveGIFOS",
     description:
       "Landing page development following the visual guides of a given user interface.",
   },
@@ -41,6 +44,7 @@ const projects = [
     name: "Calculator",
     img: "/calculator.png",
     link: "https://calculadora-react-redux.netlify.app/",
+    git:"https://github.com/matiasj899/Calculadora-redux",
     description:
       "Calculator, allow to do basic math operations.",
   },
@@ -67,10 +71,17 @@ const Home: NextPage = () => {
         </a>
         <div className={styles.projectDescAndBtn}>
           <p>{project.description}</p>
+          <div className={styles.codeAndDemoBtn}>
+          <a href={project.git} target="_blank" rel="noreferrer" className={styles.codeBtn}>
+            Code
+            <span className={styles.demoArrow}></span>
+          </a>
           <a href={project.link} target="_blank" rel="noreferrer">
             Demo
             <span className={styles.demoArrow}></span>
           </a>
+          </div>
+         
         </div>
       </div>
     );
@@ -107,9 +118,12 @@ const Home: NextPage = () => {
             Specialized in web applications,landing pages and modern websites
             development, implementing responsive design and mobile first vision.
           </p>
-          <button className={styles.homeButton}>
+       
+            <a href='#contact' className={styles.homeButton}>
             Contact me <span className={styles.buttonIcon}></span>
-          </button>
+            </a>
+           
+        
         </div>
 
         <Image
