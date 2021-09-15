@@ -32,7 +32,7 @@ nav ul{
 main{
   margin-bottom: 40px;
 }
-h1,h2,p,a,button,li{
+h1,h2,p,a,button,li,form,input,label{
   font-family: 'Poppins', sans-serif;
 }
 section{
@@ -41,3 +41,36 @@ section{
   align-items: center;
 }
 ul{list-style: none;}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(97 186 255);
+  border-radius: 5px;
+}
+form{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+input,textarea{
+  border: none;
+  border-radius: 5px;
+}
+input{
+  height: 40px;
+    
+}
+textarea{
+
+  height: 150px;
+resize: none;
+}

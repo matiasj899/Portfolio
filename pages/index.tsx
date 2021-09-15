@@ -10,53 +10,62 @@ import email from "../public/envelope-regular.svg";
 import location from "../public/map-marker-alt-solid.svg";
 import { useState } from "react";
 
-const projects=[
+const projects = [
   {
-    id:1,
-    name:'Podcast channel',
-    img:'/podcast-channel.png',
-    link:"https://podcast-and-more.netlify.app/",
-    description:"Proyecto enfocado en el maquetado de la landing page de un canal de Podcast."
+    id: 1,
+    name: "Podcast channel",
+    img: "/podcast-channel.png",
+    link: "https://podcast-and-more.netlify.app/",
+    description:
+      "Project focused on the layout of the landing page of a Podcast channel.",
   },
   {
-    id:2,
-    name:'Gifos',
-    img:'/Gifos.png',
-    link:"https://ilovegifos.netlify.app/",
-    description:"Éste proyecto consiste en la creación de una aplicación web interactiva para buscar, guardar y compartir GIFS"
+    id: 2,
+    name: "Gifos",
+    img: "/Gifos.png",
+    link: "https://ilovegifos.netlify.app/",
+    description:
+      "This project consists in the creation of an interactive web application to search, save and share gifs.",
   },
   {
-    id:3,
-    name:'Artfol',
-    img:'/artfol.png',
-    link:"https://artfol.netlify.app/",
-    description:"Proyecto enfocado en el maquetado de la landing page de un canal de Podcast, siguiendo las guías visuales de una interfaz de usuario otorgada"
-  }
-]
+    id: 3,
+    name: "Artfol",
+    img: "/artfol.png",
+    link: "https://artfol.netlify.app/",
+    description:
+      "Landing page development following the visual guides of a given user interface.",
+  },
+];
 
 const Home: NextPage = () => {
   const [skillsState1, setSkillsState1] = useState(false);
   const [skillsState2, setSkillsState2] = useState(false);
   const [skillsState3, setSkillsState3] = useState(false);
 
-  const projectData= projects.map((project)=>{
-    return(
+  const projectData = projects.map((project) => {
+    return (
       <div key={project.id} className={styles.projectCn}>
         <p className={styles.projectTitle}>{project.name}</p>
-        <a href={project.link} target='_blank' rel="noreferrer">
-       
-        <Image src={project.img} alt={project.name} width={220} height={140} quality={100} className={styles.projectsImg} ></Image>
-        
+        <a href={project.link} target="_blank" rel="noreferrer">
+          <Image
+            src={project.img}
+            alt={project.name}
+            width={220}
+            height={140}
+            quality={100}
+            className={styles.projectsImg}
+          ></Image>
         </a>
         <div className={styles.projectDescAndBtn}>
-        
-<p>{project.description}</p>
-<a href={project.link} target='_blank' rel="noreferrer">Demo</a>
+          <p>{project.description}</p>
+          <a href={project.link} target="_blank" rel="noreferrer">
+            Demo
+            <span className={styles.demoArrow}></span>
+          </a>
         </div>
-
       </div>
-    )
-  })
+    );
+  });
   return (
     <div>
       <Head>
@@ -84,12 +93,12 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.titleAndImg}>
           <h1>Hi, Im Matias Juarez</h1>
-          <h2> Frontend developer</h2>
+          <h2>Frontend developer</h2>
           <p>
             Specialized in web applications,landing pages and modern websites
             development, implementing responsive design and mobile first vision.
           </p>
-          <button>
+          <button className={styles.homeButton}>
             Contact me <span className={styles.buttonIcon}></span>
           </button>
         </div>
@@ -183,13 +192,9 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section id="portfolio">
-<h2>Portfolio</h2>
-<p>My recent works</p>
-<div className={styles.projectDataCn}>
-  {projectData}
-</div>
-
-
+        <h2>Portfolio</h2>
+        <p>My recent work</p>
+        <div className={styles.projectDataCn}>{projectData}</div>
       </section>
       <section id="contact">
         <h2>Contact me</h2>
@@ -219,27 +224,27 @@ const Home: NextPage = () => {
             </div>
           </div>
           <form>
-            <div>
-            <label>
-              Name
-              <input type="text"></input>
-            </label>
-            <label>
-              Email
-              <input type="email"></input>
-            </label>
+            <div className={styles.textAndEmailInput}>
+              <label>
+                Name
+                <input type="text" className={styles.inputWidth}></input>
+              </label>
+              <label>
+                Email
+                <input type="email" className={styles.inputWidth}></input>
+              </label>
             </div>
-         <div>
-         <label>
-              Project
-              <input type="text"></input>
-            </label>
-            <label>
-              Message
-              <textarea></textarea>
-            </label>
-           </div>            
-            <button>Send message</button>
+            <div className={styles.projectAndMessage}>
+              <label>
+                Project
+                <input type="text"></input>
+              </label>
+              <label>
+                Message
+                <textarea></textarea>
+              </label>
+            </div>
+            <button className={styles.sendMessage}>Send message</button>
           </form>
         </div>
       </section>

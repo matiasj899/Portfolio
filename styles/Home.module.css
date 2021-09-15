@@ -14,6 +14,16 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.homeButton{
+  display: flex;
+}
+.buttonIcon{
+  background-image: url(../public/angle-double-right.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+
+}
 
 #skills{
   margin-bottom: 40px;
@@ -128,9 +138,12 @@
   height: 40px;
     width: 140px;
     border-radius: 10px;
+    display: flex;
     border: none;
     cursor: pointer;
     background-color: ghostwhite;
+    align-items: center;
+    justify-content: center;
 }
 .titleAndImg button:hover{
   background-color: #f1f1f1;
@@ -194,6 +207,9 @@
 }
 .contactCn{
   display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .waysToContactCn{
   display: flex;
@@ -255,10 +271,14 @@
     background-color: dodgerblue;
     color: ghostwhite;
     height: 50px;
+   
     display: flex;
-    flex-direction: column;
+  
+    flex-direction: row;
+   
     justify-content: center;
     border-radius: 5px;
+    
     align-items: center;
 }
 .projectDescAndBtn a:hover{
@@ -268,6 +288,42 @@
 }
 .projectTitle{
   font-weight: bold;
+}
+.demoArrow{
+  background-image: url(../public/arrow-right-solid.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+.textAndEmailInput{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.inputWidth{
+  width: 190px;
+}
+.projectAndMessage{
+  width: 100%;
+}
+.sendMessage{
+  width: 100px;
+  text-align: center;
+  background-color: ghostwhite;
+
+  height: 50px;
+  
+  display: flex;
+
+  flex-direction: row;
+ 
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  
+  align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 600px) {
   .grid {
