@@ -9,7 +9,7 @@ import phone from "../public/mobile-alt-solid.svg";
 import email from "../public/envelope-regular.svg";
 import location from "../public/map-marker-alt-solid.svg";
 import linkedin from "../public/linkedin-brands.svg"
-import { useState } from "react";
+import { lazy, useState } from "react";
 
 const projects = [
   {
@@ -207,11 +207,11 @@ const Home: NextPage = () => {
       </section>
       <div className={styles.cloudFlex}> 
       <div className={styles.cloudContainer}>
-        <Image src={CloudInvert} alt="cloud" />
+        <Image src={CloudInvert} alt="cloud" loading='lazy' />
       </div>
       </div>
       
-      <section id="contact">
+      <section id="contact" className={styles.contactSection}>
         <h2>Contact me</h2>
         <p className={styles.subtitle}>Get in touch</p>
         <div className={styles.contactCn}>
