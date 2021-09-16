@@ -65,6 +65,24 @@ const projects = [
     description:
       "Advanced calculator made por Rooftop academy. Developed with React Hooks.",
   },
+  {
+    id: 7,
+    name: "Rooftop contact page",
+    img: "/rooftop-contact.png",
+    link: "https://rooftop-contact-page.netlify.app/",
+    git:"https://github.com/matiasj899/rooftop-contact-page",
+    description:
+      "Rooftop company's contact page copy. Developed with Html,Css and Javascript.",
+  },
+  {
+  id: 8,
+  name: "gross salary to net pay",
+  img: "/gross-salary.png",
+  link: "https://sueldo-bruto-a-sueldo-neto.netlify.app/",
+  git:"https://github.com/matiasj899/sueldo-bruto-a-neto",
+  description:
+    "Web page to convert a gross salary to net pay with argentinian taxes. Developed with Next.js",
+},
  
   
 ];
